@@ -1,0 +1,48 @@
+@import "../../colors.scss";
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.panel {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px grey;
+}
+
+.panel__title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: $primary;
+}
+
+.panel__hrefs {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+
+  .href {
+    text-align: center;
+    padding: 35px;
+    color: white;
+
+    background-color: $primary;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px grey;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primary-80;
+    }
+  }
+}
