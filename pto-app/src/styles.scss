@@ -7,5 +7,12 @@ html, body {
 }
 
 * {
-  transition: all 200ms ease;
+  transition: all 200ms;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }

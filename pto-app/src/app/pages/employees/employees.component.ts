@@ -9,6 +9,9 @@ export class EmployeesComponent implements OnInit {
 
   constructor() { }
 
+  activeEmployee: any = null;
+  employees: any[];
+
   ngOnInit() {
   }
 

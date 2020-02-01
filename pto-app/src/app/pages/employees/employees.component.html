@@ -1,0 +1,15 @@
+<div class="page">
+  <app-navbar></app-navbar>
+  <div class="container">
+    <div class="register">
+      <div [class]="activeEmployee? 'register__panel register__panel_open': 'register__panel'">
+
+      </div>
+      <div class="register__list">
+        <input placeholder="Поиск" type="text" class="register__autocomplete">
+        <div class="space"></div>
+        <div (click)="activeEmployee = !activeEmployee" class="register__item">+ Новый сотрудник</div>
+      </div>
+    </div>
+  </div>
+</div>

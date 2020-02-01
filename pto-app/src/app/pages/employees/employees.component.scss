@@ -1,0 +1,60 @@
+@import "../../colors.scss";
+
+.page {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+.register {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.register__panel {
+  height: 100%;
+  width: 0%;
+  background-color: $primary;
+
+  &.register__panel_open {
+    width: 80%;
+  }
+}
+
+.register__list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  margin: auto;
+}
+
+.register__autocomplete {
+  padding: 10px;
+  font-size: large;
+}
+
+.space {
+  margin: 20px 0;
+  width: 100%;
+  border: .5px solid grey;
+}
+
+.register__item {
+  padding: 10px;
+  font-size: medium;
+  border: 1px solid $primary;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-10;
+  }
+
+  &:active {
+    background-color: $primary-20;
+  }
+}

@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HrefsPanelComponent } from './components/hrefs-panel/hrefs-panel.component';
-import { EmployeesComponent } from './components/employees/employees.component';
-import { ContractsComponent } from './components/contracts/contracts.component';
-import { EquipmentsComponent } from './components/equipments/equipments.component';
-import { MaterialsComponent } from './components/materials/materials.component';
+import { HrefsPanelComponent } from './pages/hrefs-panel/hrefs-panel.component';
+import { EmployeesComponent } from './pages/employees/employees.component';
+import { ContractsComponent } from './pages/contracts/contracts.component';
+import { EquipmentsComponent } from './pages/equipments/equipments.component';
+import { MaterialsComponent } from './pages/materials/materials.component';
 
 
 const routes: Routes = [
