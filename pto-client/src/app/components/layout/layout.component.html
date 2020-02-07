@@ -1,0 +1,18 @@
+<mat-drawer-container>
+  <mat-drawer #drawer mode="side">
+    <mat-action-list>
+      <button mat-list-item routerLink="">Договоры и ПК</button>
+    </mat-action-list>
+  </mat-drawer>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button (click)="drawer.toggle()" mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>{{title}}</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-card>
+    <ng-content></ng-content>
+  </mat-card>
+</mat-drawer-container>

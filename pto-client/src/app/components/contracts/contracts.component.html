@@ -1,0 +1,18 @@
+<app-layout title="Договоры и комерческие предложения">
+  <mat-grid-list cols="5" rowHeight="90vh">
+    <mat-grid-tile colspan="3">
+      <router-outlet></router-outlet>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="2">
+      <div style="width: 100%; height: 100%;">
+        <app-list 
+          searchInputLabel="Поиск по номеру"
+          [items]="contracts"
+          [displayShema]="listDisplayShema"
+          [linkShema]="listLinkShema"
+          (onSearchInput)="searchBySubString($event)"
+        ></app-list>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</app-layout>
